@@ -1,0 +1,15 @@
+{
+    "name": "Golang-Env",
+    "build" : { "dockerfile": "Dockerfile" },
+    "extensions": [
+        "golang.go",
+        "coenraads.bracket-pair-colorizer-2",
+        "whizkydee.material-palenight-theme",
+        "pkief.material-icon-theme"
+    ],
+    "settings": {
+        "workbench.colorTheme": "Palenight Theme",
+        "workbench.iconTheme": "material-icon-theme"
+    }
+    // "postCreateCommand": "bash build-scripts/install-dev-tools.sh"
+}

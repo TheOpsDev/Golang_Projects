@@ -1,14 +1,5 @@
-FROM golang:1.15-alpine as dev
+FROM mcr.microsoft.com/vscode/devcontainers/go
 
-RUN apk update && apk upgrade && \
-    apk add --no-cache git \
-        dpkg \
-        gcc \
-        git \
-        musl-dev
-
-ENV GOPATH /go
-ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
-
-COPY . /working
-WORKDIR /working
+RUN apt-get update && \
+    export DEBIAN_FRONTEND=noninteractive && \
+    apt-get -y install git
