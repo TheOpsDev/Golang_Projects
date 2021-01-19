@@ -10,6 +10,7 @@
     "settings": {
         "workbench.colorTheme": "Palenight Theme",
         "workbench.iconTheme": "material-icon-theme"
-    }
+    },
+    "shutdownAction": "none",
     // "postCreateCommand": "bash build-scripts/install-dev-tools.sh"
 }
